@@ -29,37 +29,16 @@ class Movie {
 }
 
 // creazione oggetti
-$movie1 = new Movie('titolo1', 'spielberg', 2020, 'fantasy');
+$movie1 = new Movie('Amadeus', 'Milos Forman', 1984, 'Musica, Drammatico, Storico');
+$movie1->plot = "The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was insanely jealous of Mozart's talent and claimed to have murdered him.";
 
-$movie2 = new Movie('titolo2', 'lucas', 2010, 'sci-fi');
-$movie2->plot = "trama film di lucas molto bello";
+$movie2 = new Movie('Star Wars', 'George Lucas', 1977, 'Sci-fi, Azione, Avventura');
+$movie2->plot = "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.";
 
-$movie3 = new Movie('titolo3', 'soderbergh', 1998, 'horror');
+$movie3 = new Movie('The Fly', 'David Cronenberg', 1986, 'Horror, Drammatico, Sci-fi');
 
 // get acutal year
 $date_now = getdate();
 $year_now = $date_now['year'];
-
-echo "titolo: $movie1->title <br>";
-echo "regista: $movie1->director <br>";
-echo "anno: $movie1->year <br>";
-echo "trama: $movie1->plot <br>";
-echo "genere: {$movie1->getGenre()} <br>";
-echo "il film è stato girato {$movie1->yearDifference($year_now)} anni fa <br><br>";
-
-echo "titolo: $movie2->title <br>";
-echo "regista: $movie2->director <br>";
-echo "anno: $movie2->year <br>";
-echo "trama: $movie2->plot <br>";
-echo "genere: {$movie2->getGenre()} <br>";
-echo "il film è stato girato {$movie2->yearDifference($year_now)} anni fa <br><br>";
-
-echo "titolo: $movie3->title <br>";
-echo "regista: $movie3->director <br>";
-echo "anno: $movie3->year <br>";
-echo "trama: $movie3->plot <br>";
-echo "genere: {$movie3->getGenre()} <br>";
-echo "il film è stato girato {$movie3->yearDifference($year_now)} anni fa <br><br>";
-
 
 ?>
